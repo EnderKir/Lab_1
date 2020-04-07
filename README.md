@@ -1,5 +1,7 @@
 # Lab_1
 
-![acc][./charts/acc.jpg]
 
-![val_acc][./charts/val_acc.jpg]
+## Графики метрики точности и функции потерь
+![acc](https://github.com/EnderKir/Lab_1/raw/master/charts/acc.png)
+## Графики метрики точности и функции потерь на валидационной выборке:
+![acc](https://github.com/EnderKir/Lab_1/raw/master/charts/val_acc.png)
