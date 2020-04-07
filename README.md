@@ -1,5 +1,28 @@
 # Lab_1
 
-![acc][./charts/acc.jpg]
+В первой лабораторной работе мы реализовали полносвязную нейронную сеть из 5 слоёв.
+Сначала добавляем Flatten-слой, разворачивающий нашу матрицу изображений в одномерную для дальнейшего поступления на Dense-слой.
+Dense: 2 слоя на 128 нейронов, еще 2 слоя на 64 нейрона и слой на 10 нейронов.
+How does ReLU compare:
+ReLU is linear (identity) for all positive values, and zero for all negative values. This means that:
 
-![val_acc][./charts/val_acc.jpg]
+- It’s cheap to compute as there is no complicated math. The model can therefore take less time to train or run.
+- It converges faster. Linearity means that the slope doesn’t plateau, or “saturate,” when x gets large. It doesn’t have the vanishing gradient problem suffered by other activation functions like sigmoid or tanh.
+- It’s sparsely activated. Since ReLU is zero for all negative inputs, it’s likely for any given unit to not activate at all. This is often desirable (see below).
+
+Softmax function, a wonderful activation function that turns numbers aka logits into probabilities that sum to one. Softmax function outputs a vector that represents the probability distributions of a list of potential outcomes.
+
+При обучении нейронной сети происходит 10 этапов обучения
+
+
+Разреженная категориальная перекрестная энтропия /
+sparse categorical crossentropy: 
+![sparse](https://ibb.co/0jpJTSv)
+
+## Графики метрики точности и функции потерь:
+
+![acc](https://ibb.co/tcqCKM6)
+
+## Графики метрики точности и функции потерь на валидационной выборке:
+
+![val_acc](https://ibb.co/9hSZZJ7)
