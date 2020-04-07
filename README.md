@@ -3,6 +3,8 @@
 В первой лабораторной работе мы реализовали полносвязную нейронную сеть из 5 слоёв.
 Сначала добавляем Flatten-слой, разворачивающий нашу матрицу изображений в одномерную для дальнейшего поступления на Dense-слой.
 Dense: 2 слоя на 128 нейронов, еще 2 слоя на 64 нейрона и слой на 10 нейронов.
+
+
 How does ReLU compare:
 ReLU is linear (identity) for all positive values, and zero for all negative values. This means that:
 
@@ -17,12 +19,12 @@ Softmax function, a wonderful activation function that turns numbers aka logits 
 
 Разреженная категориальная перекрестная энтропия /
 sparse categorical crossentropy: 
-![sparse](https://ibb.co/0jpJTSv)
+![sparse](https://i.ibb.co/fYV0f5L/photo-2020-04-07-17-02-26.jpg)
 
 ## Графики метрики точности и функции потерь:
 
-![acc](https://ibb.co/tcqCKM6)
+![acc](https://i.ibb.co/Bjys3VJ/acc.jpg)
 
 ## Графики метрики точности и функции потерь на валидационной выборке:
 
-![val_acc](https://ibb.co/9hSZZJ7)
+![val_acc](https://i.ibb.co/hcwYYkS/val-acc.jpg)
