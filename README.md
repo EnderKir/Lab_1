@@ -18,7 +18,7 @@ ReLU is linear (identity) for all positive values, and zero for all negative val
 
 Softmax function, a wonderful activation function that turns numbers aka logits into probabilities that sum to one. Softmax function outputs a vector that represents the probability distributions of a list of potential outcomes.
 
-При обучении нейронной сети происходит 10 этапов обучения
+При обучении нейронной сети происходит за 50 эпох
 
 
 Разреженная категориальная перекрестная энтропия /
