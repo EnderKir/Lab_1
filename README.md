@@ -4,6 +4,10 @@
 Сначала добавляем Flatten-слой, разворачивающий нашу матрицу изображений в одномерную для дальнейшего поступления на Dense-слой.
 Dense: 2 слоя на 128 нейронов, еще 2 слоя на 64 нейрона и слой на 10 нейронов.
 
+В цикле обучения используются:
+* оптимизатор 'adam'
+* функция потерь 'sparse_categorical_crossentropy'
+* метрика 'accuracy'
 
 How does ReLU compare:
 ReLU is linear (identity) for all positive values, and zero for all negative values. This means that:
