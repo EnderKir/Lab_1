@@ -27,6 +27,8 @@ Softmax function, a wonderful activation function that turns numbers aka logits 
 sparse categorical crossentropy: 
 ![sparse](https://i.ibb.co/fYV0f5L/photo-2020-04-07-17-02-26.jpg)
 
+loss: 1.4366 - acc: 0.4827 - val_loss: 1.5164 - val_acc: 0.4581
+
 ## Графики метрики точности и функции потерь:
 
 ![acc](https://i.ibb.co/Bjys3VJ/acc.jpg)
