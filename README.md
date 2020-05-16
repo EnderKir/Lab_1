@@ -11,14 +11,10 @@ Dense: 2 слоя на 128 нейронов, еще 2 слоя на 64 нейр�
 * функция потерь 'sparse_categorical_crossentropy'
 * метрика 'accuracy'
 
-How does ReLU compare:
-ReLU is linear (identity) for all positive values, and zero for all negative values. This means that:
+Как ReLU сравнивает:
+ReLU является линейным (тождественным) для всех положительных значений и нулем для всех отрицательных значений.
 
-- It’s cheap to compute as there is no complicated math. The model can therefore take less time to train or run.
-- It converges faster. Linearity means that the slope doesn’t plateau, or “saturate,” when x gets large. It doesn’t have the vanishing gradient problem suffered by other activation functions like sigmoid or tanh.
-- It’s sparsely activated. Since ReLU is zero for all negative inputs, it’s likely for any given unit to not activate at all. This is often desirable (see below).
-
-Softmax function, a wonderful activation function that turns numbers aka logits into probabilities that sum to one. Softmax function outputs a vector that represents the probability distributions of a list of potential outcomes.
+Функция Softmax, замечательная функция активации, которая превращает числа или логиты в вероятности, которые равны единице. Функция Softmax выводит вектор, который представляет распределения вероятностей списка потенциальных результатов
 
 При обучении нейронной сети происходит за 50 эпох
 
